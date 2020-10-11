@@ -1,10 +1,6 @@
-# Welcome to your CDK C# project!
+# EventBridgeToHttp
 
-This is a blank project for C# development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-It uses the [.NET Core CLI](https://docs.microsoft.com/dotnet/articles/core/) to compile and execute your project.
+A Lambda function application that bypasses the contents of the [Amazon EventBridge](https://aws.amazon.com/eventbridge/) to a webhook.
 
 ## Useful commands
 
@@ -12,3 +8,12 @@ It uses the [.NET Core CLI](https://docs.microsoft.com/dotnet/articles/core/) to
 * `cdk deploy`       deploy this stack to your default AWS account/region
 * `cdk diff`         compare deployed stack with current state
 * `cdk synth`        emits the synthesized CloudFormation template
+
+## Configure
+
+Set `CONFIG` environment variable.
+
+Example:
+```sh
+CONFIG='{"EventSourceName":"<your_event_source_naem>","WebhookUrl":"<your_webhook_url>"}'
+```
