@@ -1,6 +1,6 @@
 # EventBridgeToHttp
 
-A Lambda function application that bypasses the contents of the [Amazon EventBridge](https://aws.amazon.com/eventbridge/) to a webhook.
+A Lambda function application that bypasses the events of the [Amazon EventBridge](https://aws.amazon.com/eventbridge/) to a webhook.
 
 ## Useful commands
 
